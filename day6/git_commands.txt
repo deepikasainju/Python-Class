@@ -29,3 +29,22 @@ then such files and folders name are kept(name mention) in .gitignore file
 
 9. git commit -m "<commit-message>"
 = -m ley message flag ho so msg lekhne
+= commit vaneko yo code kasley lekheko ho vanera git lai vanxa
+
+10. git config user.name <user name>
+= global nahalera yesari garda yo project ko lagi matra tyo user name use hunxa
+
+11. git branch
+= shows all the branches and highlights the current branch
+= yo garda master aauxa vane main ma change garna parxa using below
+
+12. git branch -M main
+= makes "main" branch as the root branch
+
+13. git remote add origin <ssh-link>
+= add a remote with name 'origin' in the local repo
+= local repo ra remote repo(git) lai link garxa
+
+14. git push -u origin main
+= push the files in the git 
+
