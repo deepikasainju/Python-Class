@@ -14,4 +14,4 @@
 = merges the code from the branch provided to the current branch
 
 // merge garisakexi git push garda matra pugxa 
-// feri branch 1 ma kei lekhe vane git ma push garna git add dekhi feri garna parxa
+// feri branch1 ma kei lekhe vane git ma push garna git add dekhi feri garna parxa
