@@ -48,3 +48,9 @@ then such files and folders name are kept(name mention) in .gitignore file
 14. git push -u origin main
 = push the files in the git 
 
+git push = uploads your code in github
+-u = this tracks your local branch upstream with remote
+origin = alias name for remote (github)
+main = remote "main" branch
+
+The significance of -u (tracking the upstream) is that we can write "git push" only from next time
