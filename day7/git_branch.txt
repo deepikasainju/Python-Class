@@ -10,4 +10,5 @@
 4. git checkout -b <branch_name>
 = creates a new branch and jumps to that branch by copying all the codes from current branch
 
-5. 
+5. git merge <branch_name>
+= merges the code from the branch provided to the current branch
