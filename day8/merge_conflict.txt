@@ -7,4 +7,5 @@ a code written in same file in different branch during the merging process then 
 
  print(a-b)
  print(a*b)
+ print(a%b)
 
