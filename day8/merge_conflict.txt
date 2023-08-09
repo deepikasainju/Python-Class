@@ -6,7 +6,5 @@ a code written in same file in different branch during the merging process then 
  b=2
 
  print(a-b)
- print(a*b)
+ print(a*a*b)
  print(a+b)
-
-print(a+b)
