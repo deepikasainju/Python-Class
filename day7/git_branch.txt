@@ -15,3 +15,4 @@
 
 // merge garisakexi git push garda matra pugxa 
 // feri branch1 ma kei lekhe vane git ma push garna git add dekhi feri garna parxa
+// main ma merge garna lai git batai garne ani git pull garne
