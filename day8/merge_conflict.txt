@@ -1,7 +1,9 @@
 If code written in one file of a project in one branch collides with
 a code written in same file in different branch during the merging process then merge conflict arises
 
-
+git add . 
+git commit -m <commit_msg>
+git merge <branch_name> //error aauxa so milaune ani feri git add . dekhi garne
  a=1
  b=2
 
