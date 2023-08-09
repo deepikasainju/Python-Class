@@ -4,5 +4,7 @@ a code written in same file in different branch during the merging process then 
 
  a=1
  b=2
+
+ print(a-b)
  print(a*b)
 
