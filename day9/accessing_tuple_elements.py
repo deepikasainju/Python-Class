@@ -26,3 +26,9 @@ print(data[-7:-3]) #('d', 'e', 'f', 'g')
 print(data[-2:-6]) #()
 print(data[3:-6]) #('d',)
 print(data[-8:7]) # ('c', 'd', 'e', 'f', 'g')
+
+print(data[2:9:2]) #('c', 'e', 'g', 'i') 
+#here the last parameter is a step size. If "2" is given it jumps by one step size
+
+#delete 
+del data # deletes the object
