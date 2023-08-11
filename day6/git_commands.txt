@@ -54,3 +54,10 @@ origin = alias name for remote (github)
 main = remote "main" branch
 
 The significance of -u (tracking the upstream) is that we can write "git push" only from next time
+
+15. git branch -d <branch_name>
+ this for deletion of  branch in local
+
+16. git clone <ssh_link>
+github ma vako project downlaod garna lai use hunxa ani command ma propmpt ma gayera kun folder ma garne 
+vanera halera garne
