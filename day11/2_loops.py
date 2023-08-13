@@ -5,6 +5,8 @@
 vowels=["a","e","i","o","u"]
 for i in vowels:
     print(i)
+else:
+    print("this is executed if the main loop is completely iterated.")
 
 # looping is similar to list in tuples and set
 
