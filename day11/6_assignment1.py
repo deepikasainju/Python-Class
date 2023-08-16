@@ -4,7 +4,7 @@ sum=0
 for i in range(1,6):
     sum+=n**i
     print(sum)
-print(sum)
+print(f"total:{sum}")
 
 # wap to calculate difference between a given number and 17. if the number is greater 
 # than 17 return twice the absolute difference
