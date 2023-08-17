@@ -23,6 +23,7 @@ for i in range(10):
 n=0
 while n<10:
     if n==4:
+        n+=1
         continue
     print(n)
     n+=1
