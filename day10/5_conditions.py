@@ -48,3 +48,16 @@ if n%2==0:
     print(f"{n} is even")
 else:
     print(f"{n} is odd")
+
+
+
+# ternery if 
+# one liner conditions are called ternery if
+a=10
+b=5
+if a>b:
+    print(f"{a} is greater")
+else:
+    print(f"{b} is greater")
+
+print(f"{a} is greater") if a>b else print(f"{b} is greater # one line ternary if")
