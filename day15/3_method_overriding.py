@@ -20,3 +20,5 @@ class Bike(Vehicle):
 
 b1=Bike("red", 3, 45,"yamaha")
 print(b1.get_details())
+
+# overriding ko help ley extra details ni thapna milxa
