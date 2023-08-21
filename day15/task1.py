@@ -10,4 +10,4 @@ class Person:
         return f"the name is {self.name} and age is {self.age}"
     
 p=Person("shyam",23)
-print(p.get_details())
+print(p.get_details()) 
