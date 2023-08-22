@@ -7,4 +7,6 @@ then one of the packages must be uninstalled from your global system and another
 # virtual environment is an isolated environment to keep the packages required for your project
 # it solves the problem of installing and uninstalling packages for different projects in a same system
 
-# every python project must be done with a virtual environment activity
+# every python project must be done with a virtual environment activated
+
+// pypi bata packages haru install garne

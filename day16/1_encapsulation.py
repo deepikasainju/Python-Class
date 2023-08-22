@@ -29,6 +29,7 @@ print(v1.description())
 # they are not meant to be used outside class
 # python is not strict in oop approach so it allows protected members to be accessed even outside the class.
 # but it is not recommended for developers as it doesnt follow proper convention
+# it can be used in both methods and attributes
 
 # private property is not accessible outside the class or in their children
 # print(v1.__milage) ## attribute error
