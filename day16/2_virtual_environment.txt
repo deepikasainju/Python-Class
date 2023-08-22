@@ -10,3 +10,27 @@ then one of the packages must be uninstalled from your global system and another
 # every python project must be done with a virtual environment activated
 
 // pypi bata packages haru install garne
+
+# virtual commands for virtual environment
+1. python -m veny <environment_name(env, venv)>
+    =creates a new virtual environment (for this session lets say "venv")
+
+2.venv\Scripts\activate (for windows device enter this command in command prompt)
+  source venv/bin/activate (for max and linux devices)
+    =activates the virtual environment
+
+3. deactivate
+  = deactivates the environment
+
+4. pip install <package>(pandas)
+  = install the packages
+
+5. pip freeze
+  = it displays the packages installed in the environment
+
+6. pip freeze > requirements.txt
+  = packages list vayeko files banaidinxa 
+  = add all the dependencies of the project in requirements.txt file
+
+7. pip install -r requirements.txt
+  = recursively install all the packages in the virtual environment
