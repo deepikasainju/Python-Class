@@ -1,0 +1,10 @@
+# we may have different projects  in our system that may require different package dependencies
+# your project may have pandas version 2.1 whereas project2 may havr pandas version 2.5 in the same system
+# so this arises a problem . I fyou want to work on project1 
+then one of the packages must be uninstalled from your global system and another version must be installed 
+
+# this probelm can be solved creating a virtual environment in your system
+# virtual environment is an isolated environment to keep the packages required for your project
+# it solves the problem of installing and uninstalling packages for different projects in a same system
+
+# every pyhton project must be done with a virtual environment activity
