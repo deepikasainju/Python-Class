@@ -1,0 +1,3 @@
+# each file of python with extension .py is pyhton module
+# collection of these modules makes a package
+# collection python packages makes a pyhton library
