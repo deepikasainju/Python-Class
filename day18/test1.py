@@ -3,7 +3,7 @@
 # import csv
 # import pandas as pd
 
-# from day18.test1 import a 
+# from test1 import a 
 
 def add(a,b):
     return a+b

@@ -1,7 +1,7 @@
-from day19.crud.create import create_student
-from day19.crud.read import read_student
-from day19.crud.update import update_student
-from day19.crud.delete import delete_student
+from create import create_student
+from read import read_student
+from update import update_student
+from delete import delete_student
 
 def inquiry():
     selection=input("enter your choice c/r/u/d/e:")

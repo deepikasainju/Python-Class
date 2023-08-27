@@ -3,7 +3,7 @@ import json
 filename="students.json"
 
 def create_student():
-    id=input("enter studentid:")
+    id=input("enter student id:")
     name=input("enter name:")
     age=input("enter age:")
 
