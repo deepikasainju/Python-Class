@@ -11,16 +11,23 @@ def inquiry():
         print("thank you. byeeeeeee!!!!!")
 
     if selection=="c":
-        create_student()
+        repeat=create_student()
+        inquiry() if repeat else exit_message()
 
-    if selection=="r":
-        read_student()
+    elif selection=="r":
+        student_id=input("enter the student id:")
+        repeat=read_student(student_id)
+        inquiry() if repeat else exit_message()
 
-    if selection=="u":
-        update_student()
+    elif selection=="u":
+        student_id=input("enter the student id:")
+        repeat=update_student(student_id)
+        inquiry() if repeat else exit_message()
 
-    if selection=="d":
-        delete_student()
+    elif selection=="d":
+        student_id=input("enter the id of data to be deleted:")
+        repeat=delete_student(student_id)
+        inquiry() if repeat else exit_message()
 
     else:
         exit_message()
