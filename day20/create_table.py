@@ -13,5 +13,5 @@ CREATE TABLE STUDENT(
 )
 """
 
-cursor.execute(sql)
+cursor.execute(sql) # sql string database ko query ma change gardinxa
 print("table created successfully!!")
