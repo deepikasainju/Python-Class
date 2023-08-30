@@ -2,7 +2,6 @@
 # Database connector connects your program with database
 # mysqlclient,psycopg2 etc are the db connectors
 
-
 def estd_connection():
     import psycopg2         # python connection of postgress
     conn=psycopg2.connect(

@@ -10,7 +10,6 @@ def update_student(student_id):
     """
     cursor.execute(sql)
     print(" Student updated succesfully")
-
-            
+  
     repeat=input("Do you want to continue? (Y/N)")
     return True if repeat.lower()=='y' else False
