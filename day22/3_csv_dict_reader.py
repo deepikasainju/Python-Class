@@ -2,8 +2,11 @@ import csv
 
 filename="students.csv"
 with open(filename, "r") as cr:
-    for each in csv.DictReader(cr):
+    result=[]
+    for each in csv.DictReader(cr): # dictionary ma convert grxa DictReader ley
         print(each)
+        result.append(each)
+print(result) # list ma dictionary aauxa
 
 
 '''

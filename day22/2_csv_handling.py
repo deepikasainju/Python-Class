@@ -14,6 +14,11 @@ with open(filename, "r")as cr:
         data=dict(id=each_line[0], name=each_line[1], age=each_line[2], address=each_line[3])
         result.append(data)
 
+#each_line
+# ['1', 'jon', '20', 'KTM']
+# ['2', 'jane', '30', 'BKT']
+# ['3', 'ken', '45', 'PKR']
+
 print(result)
 """[
     {'id': '1', 'name': 'jon', 'age': '20', 'address': 'KTM'}, 
