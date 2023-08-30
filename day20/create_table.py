@@ -1,7 +1,7 @@
 
 from estd_connection import estd_connection
 
-cursor=estd_connection()
+cursor=estd_connection() #cursor= estd connection ko object ho
 
 # cursor.execute("DROP TABLE STUDENT")
 

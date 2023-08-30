@@ -5,7 +5,7 @@
 def estd_connection():
     import psycopg2
     conn=psycopg2.connect(
-        databse="student",
+        databse="studentdb",
         user="postgres"
         password="password"
         host="127.0.0.1"
