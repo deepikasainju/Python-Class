@@ -1,13 +1,13 @@
 from estd_connection import estd_connection
 
-cursor=estd_connection()
+cursor = estd_connection()
 
-id= input("enter student id:")
+id = input("Enter student ID:")
 
-sql=f"""
-SELECT * FROM STUDENT WHERE ID='{id}"
+sql = f"""
+SELECT * FROM STUDENT WHERE ID='{id}'
 """
 
 cursor.execute(sql)
-result=cursor.fetchone()
+result = cursor.fetchone()
 print(result)
