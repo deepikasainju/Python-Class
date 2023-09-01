@@ -14,16 +14,21 @@ class Animal(ABC):
     def sound(self):
         pass
 
-a=Animal()
+# a=Animal() # error becuz no object should be made for abstract class
+# it can be inherited though
 
-def Dog(Animal): # child class ma abstractmethod ko function hunai parxa
+class Dog(Animal): # child class ma abstractmethod ko function hunai parxa
     def sound(self): # decorator vayeko parent class ko func lai override garnai parxa
         print("bark")
 
-def Cat(Animal):
+class Cat(Animal):
     def sound(self):
         print("meow")
 
 dog=Dog()
 dog.sound()
 dog.sleep()
+
+cat=Cat()
+cat.sound()
+cat.sleep()
