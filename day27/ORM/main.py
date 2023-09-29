@@ -30,9 +30,9 @@ session=Session()
 print("Connection Established!!")
 
 if __name__=="__main__":
-    s1=Student(1, "ram", 30, "M")
-    s2=Student(2, "shyam", 20, "M")
-    s3=Student(3, "ham", 40, "M")
+    s1=Student(56, "Sita", 30, "M")
+    s2=Student(23, "Sam", 20, "M")
+    s3=Student(32, "Iam", 40, "M")
     session.add(s1)
     session.add(s2) # table ma data add gareko
     session.add(s3)

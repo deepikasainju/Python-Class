@@ -2,10 +2,46 @@ import tkinter
 from tkinter import ttk
 from tkinter import messagebox
 
+from sqlalchemy import create_engine, Column, String, Integer, CHAR
+from sqlalchemy.orm import sessionmaker, declarative_base
+
+Base=declarative_base()
+
+class Entry_Form(Base):
+    __tablename__="Form"
+    id=Column("ID",Integer,primary_key=True)
+    first_name=Column("First Name", String)
+    last_name=Column("Last Name", String)
+    title=Column("Title", String)
+    age=Column("Age", Integer)
+    nationality=Column("Nationality",String)
+    num_courses=Column("No of Completed Courses",String)
+    num_semesters=Column("No of Semester", String)
+    registration_status=Column("Registration Status", String)
+
+    def __init__(self,id,first_name,last_name,title,age,nationality,num_courses,num_semesters,registration_status):
+        self.id=id
+        self.first_name=first_name
+        self.last_name=last_name
+        self.title=title
+        self.age=age
+        self.nationality=nationality
+        self.num_courses=num_courses
+        self.num_semesters=num_semesters
+        self.registration_status=registration_status
+
+engine=create_engine("sqlite:///entry_form.db", echo=True)
+Base.metadata.create_all(bind=engine)
+Session=sessionmaker(bind=engine)
+session=Session()
+print("Connection Established!!")
+
+
 
 def submit_data():
     status = terms_check_var.get()
     if status == "Accepted":
+        id=id_entry.get()
         first_name = first_name_entry.get()
         last_name = last_name_entry.get()
         title = title_combobox.get()
@@ -15,6 +51,10 @@ def submit_data():
         num_courses = num_courses_spinbox.get()
         num_semesters = num_semesters_spinbox.get()
         registration_status = reg_status_var.get()
+
+        form_object=Entry_Form(id,first_name,last_name,title,age,nationality,num_courses,num_semesters,registration_status)
+        session.add(form_object)
+        session.commit()
 
 
         print(first_name)
@@ -47,16 +87,21 @@ title_combobox = ttk.Combobox(user_info_frame, values=["", "Mr.", "Ms."])
 title_label.grid(row=0, column=2)
 title_combobox.grid(row=1, column=2)
 
+id_label = tkinter.Label(user_info_frame, text="ID")
+id_label.grid(row=2, column=0)
+id_entry = tkinter.Entry(user_info_frame)
+id_entry.grid(row=3, column=0)
+
 age_label = tkinter.Label(user_info_frame, text="Age")
 age_spinbox = tkinter.Spinbox(user_info_frame, from_=18, to=100)
-age_label.grid(row=2, column=0)
-age_spinbox.grid(row=3, column=0)
+age_label.grid(row=2, column=1)
+age_spinbox.grid(row=3, column=1)
 
 
 nationality_label = tkinter.Label(user_info_frame, text="Nationality")
 nationality_combobox = ttk.Combobox(user_info_frame, values=["Nepal", "Singapore", "Japan"])
-nationality_label.grid(row=2, column=1)
-nationality_combobox.grid(row=3, column=1)
+nationality_label.grid(row=2, column=2)
+nationality_combobox.grid(row=3, column=2)
 
 for widget in user_info_frame.winfo_children():
     widget.grid_configure(padx=10, pady=5)
